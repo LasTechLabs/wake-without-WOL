@@ -37,7 +37,7 @@ In this way, you can remotely "ask" the computer to stay on, with the maximum wa
 
 ## How to install and set up Wake without WoL:<a name="how-to-install-and-set-up-wake-without-wol"></a>
 
-1. Download wakescript.bat and hidescript.vbs from this repository (or just clone the 
+1. Download wakescript.bat and hidescript.vbs from this repository (or just clone the repo). Also ensure that you have the windows utility [psshutdown installed](https://docs.microsoft.com/en-us/sysinternals/downloads/psshutdown).
 
  WakeScript.bat - This is the script responsible for checking an online file and deciding whether to keep the computer online or go back to sleep. 
 
@@ -71,8 +71,8 @@ Power Options -> change plan settings -> change advanced power settings -> sleep
         - Check "enabled", all settings not described should be unchecked or disabled.
     3. Actions tab - Create a new Action.
         - From the drop down list, select "Start a program".
-        - In the text field under Program/script type "hide.vbs" (no quotation marks)
-        - In the text field next to "Start in", type the path to the folder which contains hide.vbs. 
+        - In the text field under Program/script type "hideScript.vbs" (no quotation marks)
+        - In the text field next to "Start in", type the path to the folder which contains hideScript.vbs. 
         - Note, if it doesn't work, try adding quotation marks to one of the above text field entries. This was inconsistent when I tried on two different machines.
 
     4. Conditions tab - 
